@@ -3,12 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Portfolio de Candice Renvoizé--Juniot, Product Designer & Future Chef de Projet Digital. Spécialisée en UX/UI, intégration IA et maquettes interactives.">
+    <title>Candice Renvoizé--Juniot // Product Designer & UX/UI</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Portfolio</h1>
-    <h2>test</h2>
-    <p>lorem</p>
+<body class="hud-body">
+
+    <!-- HUD Top Status Ticker & Header -->
+    <header class="hud-header">
+        <div class="hud-ticker-bar" aria-hidden="true">
+            <div class="ticker-content">
+                <span class="ticker-item"><span class="pulse-dot"></span> SYS//ONLINE</span>
+                <span class="ticker-item">LOC: CÉNAC [33360]</span>
+                <span class="ticker-item">ROLE: PRODUCT DESIGNER</span>
+                <span class="ticker-item">SYS//PROJECTS: 05 LOADED</span>
+                <span class="ticker-item">DEPT: DIGITAL CAMPUS 2024-2027</span>
+            </div>
+        </div>
+
+        <nav class="hud-nav" aria-label="Navigation principale">
+            <a href="#" class="hud-brand" aria-label="Accueil Candice Renvoizé--Juniot">
+                <span class="brand-symbol" aria-hidden="true">◆</span>
+                <span class="brand-text">IRIONA<span class="brand-sub">//STUDIO</span></span>
+            </a>
+
+            <ul class="hud-nav-list" role="list">
+                <li><a href="#projets" class="nav-link"><span class="nav-num">01//</span>PROJETS</a></li>
+                <li><a href="#expertise" class="nav-link"><span class="nav-num">02//</span>EXPERTISE</a></li>
+                <li><a href="#parcours" class="nav-link"><span class="nav-num">03//</span>PARCOURS</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-num">04//</span>CONTACT</a></li>
+            </ul>
+
+            <a href="#contact" class="hud-btn hud-btn-sm">
+                <span class="btn-corner top-left">+</span>
+                <span class="btn-corner bottom-right">+</span>
+                INIT//TALK
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        
+        <!-- Hero / Section Présentation -->
+        <section id="hero" class="hud-hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                
+                <!-- Left Column: Hero Content Block -->
+                <article class="hero-main-block hud-box">
+                    <span class="box-corner top-left">[</span>
+                    <span class="box-corner top-right">]</span>
+                    <span class="box-corner bottom-left">[</span>
+                    <span class="box-corner bottom-right">]</span>
+
+                    <div class="hud-tag-group">
+                        <span class="hud-badge badge-purple">SYS//PROFILE</span>
+                        <span class="hud-badge badge-lavender">PRODUCT DESIGNER</span>
+                        <span class="hud-badge badge-outline">DIGITAL CAMPUS</span>
+                    </div>
+
+                    <h1 id="hero-title" class="hero-name">
+                        CANDICE<br>
+                        <span class="text-highlight">RENVOIZÉ--JUNIOT</span>
+                    </h1>
+
+                    <p class="hero-subtitle">FUTURE CHEF DE PROJET DIGITAL & UX/UI DESIGNER</p>
+
+                    <p class="hero-description">
+                        Curieuse et passionnée par l'UX/UI, j'analyse et optimise les interfaces pour concevoir des expériences numériques utiles, simples et centrées sur l'humain. En quête d'innovation, j'intègre l'Intelligence Artificielle (IA) dans mon processus créatif pour proposer des solutions toujours plus accessibles.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projets" class="hud-btn hud-btn-primary">
+                            <span class="btn-corner top-left">+</span>
+                            <span class="btn-corner top-right">+</span>
+                            EXPLORER LES 5 MAQUETTES
+                        </a>
+                        <a href="#contact" class="hud-btn hud-btn-secondary">
+                            ME CONTACTER
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Right Column: Interactive HUD Status & Emblem Panel -->
+                <aside class="hero-hud-card hud-box" aria-label="Fiche synthétique d'expertise">
+                    <span class="box-corner top-left">+</span>
+                    <span class="box-corner top-right">+</span>
+                    <span class="box-corner bottom-left">+</span>
+                    <span class="box-corner bottom-right">+</span>
+
+                    <div class="hud-card-header">
+                        <span class="card-title">SYS//METRICS</span>
+                        <span class="card-status"><span class="pulse-dot-green"></span> RUN/01</span>
+                    </div>
+
+                    <!-- Emblem / SVG Holder -->
+                    <div class="emblem-container" aria-hidden="true">
+                        <div class="emblem-wrapper">
+                            <svg viewBox="0 0 100 100" class="hud-emblem-svg" aria-hidden="true">
+                                <polygon points="50,10 85,50 50,90 15,50" fill="none" stroke="var(--color-purple-main)" stroke-width="2.5"/>
+                                <polygon points="50,25 70,50 50,75 30,50" fill="var(--color-lavender)" opacity="0.7"/>
+                                <circle cx="50" cy="50" r="4" fill="var(--color-white)"/>
+                            </svg>
+                            <span class="emblem-label">IRIONA//SYSTEM</span>
+                        </div>
+                    </div>
+
+                    <div class="hud-stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">05</span>
+                            <span class="stat-label">MAQUETTES WEB</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">07+</span>
+                            <span class="stat-label">INTERFACES CLIENTS (TOKIZ)</span>
+                        </div>
+                        <div class="stat-item stat-full">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">CENTRE UX/UI & INTÉGRATION IA</span>
+                        </div>
+                    </div>
+
+                    <div class="hud-card-footer">
+                        <span class="footer-code">SYS_ID: CRJ-2026</span>
+                        <span class="footer-meta">STATUS: READY</span>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>
